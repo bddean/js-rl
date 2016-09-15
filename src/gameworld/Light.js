@@ -1,4 +1,5 @@
 var Light = inherit.component(Entity, {
+	name: 'light',
 	shape: '?',
 	fg: 'yellow',
 	brightness: 5,

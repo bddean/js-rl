@@ -7,5 +7,10 @@ A Javascript roguelike game engine built on top of the
   - Extend ROT.js shadow casting to support partial lighting
   - Extend ROT.js cell display with a blur effect
   - Desktop web interface with a Nethack-like menu system
-- The very simple demo in index.html demonstates lighting effects and the
+- A [very simple demo](http://htmlpreview.github.io/?https://github.com/bddean/js-rl/blob/master/index.html) in index.html demonstates lighting effects and the
   interface.
+  - weasdf keys move (6 directions)
+  - i: show inventory
+  - .: drop items
+  - ,: pick up items
+- 

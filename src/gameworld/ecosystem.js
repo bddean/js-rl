@@ -3,6 +3,7 @@
  */ 
 
 var Plant = inherit.component(Entity, {
+	name: 'plant',
   plane: 1,
   shape: '?',
   fg: '#3f2a14',
@@ -28,6 +29,7 @@ var LongGrass = inherit.component(Plant, {
 });
 
 var Tree = inherit.component(Plant, {
+	name: 'tree',
 	shape: 'T', // τ ♣ Ψ
   plane: 3,
   solidity: Entity.som.SOLID,
@@ -36,6 +38,7 @@ var Tree = inherit.component(Plant, {
 });
 
 var Bush = inherit.component(Plant, {
+	name: 'bush',
   shape: '#',
 	plane: 3,
   opacity: 0.15,
@@ -53,6 +56,7 @@ var Water = inherit.component(Entity, {
 
 
 var Rock = inherit.component(Entity, {
+	name: 'rock',
   shape: '^',
   bg: 'grey',
   fg: 'darkslategrey',

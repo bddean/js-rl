@@ -135,13 +135,11 @@ Interface.defProto('dispStatus', function() {
 	var row = 0;
 	var that = this;
 	var attrnames = this._subject.getAttributes();
-	console.log('attrnames', attrnames);
 	
 	var value, disp, abbrev;
 	if (this._statusDisplay.getOptions().height != attrnames.length)
 		this._statusDisplay.setOptions({height: attrnames.length});
 	attrnames.forEach(function(attr) {
-		console.log('draw' ,attr, that._subject[attr]);
 		var abbrev = attr.substring(0, 3);
 		var value = that._subject[attr];
 		var disp = (value.value == value.baseValue) ? 
@@ -391,7 +389,6 @@ Interface.defProto('selectMultiple', function(prompt, items, opt_keystype) {
 			});
 			this._showList(prompt, items, options);
 		} else if (e.code == 'Enter') { // Confirm
-			console.log('selection', selection);
 			var result = [];
 			for (var s in selection) if (selection[s]) {
 				result = result.concat(menu[s]);
