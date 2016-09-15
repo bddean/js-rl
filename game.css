@@ -1,0 +1,65 @@
+body {
+  background: lightgrey;
+}
+
+#game-container {
+  position: relative;
+  /* float: left; */
+  /* white-space: nowrap; */
+}
+
+#terminal {
+	position: relative;
+	float: left;
+}
+
+canvas {
+  vertical-align: top;
+  display: inline;
+  top: 0;
+}
+
+canvas.game {
+  z-index: 0;
+  cursor: none;
+}
+
+canvas.menu { left: 0; }
+canvas.status {right: 0;}
+
+canvas.overlay {
+  position: absolute;
+  z-index: 1;
+  opacity: .70;
+  transition: opacity 0.25s;;
+  display: inline-block;
+}
+
+canvas.overlay.hidden {
+	pointer-events: none;
+  opacity: 0;
+}
+
+.entityrep {
+	float: left;
+	width: 15px;
+	text-align: center;
+}
+
+#info {
+	position: relative;
+	display: inline-block;
+}
+
+.info-panel {
+	background: grey;
+	width: 300px;
+	height: 150px;
+	border: 1px solid black;
+	overflow: auto;
+}
+
+#message-buffer {
+	background: goldenrod;
+	height: 180px;
+}

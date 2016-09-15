@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> RL! </title>
+    <link rel="stylesheet" type="text/css" href="./game.css">
+
+    <!-- for reactive programming with emacs -->
+    <script type="application/javascript" src="http://localhost:8000/skewer"></script>
+
+    <script src="lib/rot.js"></script>
+    <script src="src/rot-ext.js"</script>
+
+		<!-- For some reason, without empty script here, the next one doesn't load. -->
+    <script></script> 
+    <script src="src/utilities.js"></script>
+    <script src="src/inherit.js"></script>
+    <script src="src/interface/Interface.js"></script>
+		
+		<script src="src/gameworld/World.js"></script>
+		<script src="src/gameworld/Container.js"></script>
+		<script src="src/gameworld/Cell.js"></script>
+		<script src="src/gameworld/Entity.js"></script>
+		<script src="src/gameworld/Destructible.js"></script>
+		<script src="src/gameworld/Actor.js"></script>
+		<script src="src/gameworld/Sighted.js"></script>
+		<script src="src/gameworld/Light.js"></script>
+		<script src="src/gameworld/Animal.js"></script>
+		<script src="src/gameworld/Portable.js"></script>
+
+		<script src="src/gameworld/Human.js"></script>
+
+		<script src="src/gameworld/ecosystem.js"></script>
+    <script src="src/game.js"></script>
+  </head>
+  <body>
+		<div id="terminal">
+			<div id="game-container"></div>
+			<div id="echo-container"></div>
+		</div>
+		<div id="info">
+			<div id="player-location-info" class="info-panel"></div>
+			<div id="selection-info" class="info-panel"></div>
+			<div id="message-buffer" class="info-panel"></div>
+		</div>
+	</body>
+</html>
