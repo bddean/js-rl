@@ -1,26 +1,8 @@
-// TODO order shouldn't matter (so initialize everything only after everything loads)
-
-// TODO just require explicit override for conflicts -- except child always
-// overrides ancestor
-
-// names
-// deeptrait
-//  cousin / cuz
-//  hills
-//  $_$
-//  _$_
-//  $$$
-//  deepcomp
-
-// private variables should not be passable in spec (though this can just be
-// convention)
-// hooks?
-//  - horizontal super?
-//    - maybe a separate function -- uber or $sideways or something
-//    - keep thinking about this, see what use cases come up
-//      - like explicit hook. b/c specificty doesn't really determine desired order
-//        - figure same out? via parsing or something?
-//    - diamond problem
+// TODO Order shouldn't matter (so initialize everything only after everything loads)
+// TODO Require explicit override for conflicts -- except child always
+//      overrides ancestor
+// TODO Think of a clever name
+// TODO Implement method hooks
 // TODO interfaces / abstract props
 // TODO single fn
 // TODO dynamic defproto

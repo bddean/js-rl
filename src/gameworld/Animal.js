@@ -3,8 +3,6 @@ var Animal = inherit.component([Actor, Destructible], {
   plane: 3,
   solidity: Entity.som.SOLID,
 	_directionIdx: inherit.component.eval('Math.floor(Math.random() * 6)'),
-	// TODO hp should probably be provided by a Destructible mixin
-
 	satiety: new Attribute({
 		baseValue: 0,
 		growthRate: 0.01
